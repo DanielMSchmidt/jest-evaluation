@@ -1,24 +1,9 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
-  AppRegistry,
   StyleSheet,
   Text,
   View
 } from 'react-native';
-
-class ReactNativeExample extends Component {
-  render() {
-    return (
-      <Intro />
-    );
-  }
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -39,4 +24,17 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('ReactNativeExample', () => ReactNativeExample);
+export default class Intro extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          Welcome to React Native!
+        </Text>
+        <Text style={styles.instructions}>
+          This is a React Native snapshot test.
+        </Text>
+      </View>
+    );
+  }
+}
