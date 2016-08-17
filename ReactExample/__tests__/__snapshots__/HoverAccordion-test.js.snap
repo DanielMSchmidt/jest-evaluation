@@ -1,0 +1,22 @@
+exports[`Accordion renders the additional content on hover 1`] = `
+<ul>
+  <li>
+    <h3>
+      Foo
+    </h3>
+  </li>
+  <li>
+    <h3>
+      Bar
+    </h3>
+    <p>
+      Bar content
+    </p>
+  </li>
+  <li>
+    <h3>
+      Baz
+    </h3>
+  </li>
+</ul>
+`;

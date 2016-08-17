@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import HoverAccordion from './components/HoverAccordion';
+import Accordion from './components/Accordion';
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to my Jest example</h2>
         </div>
-        <HoverAccordion headlines={['Foo', 'Bar', 'Baz']} content={['Foo Content', 'Bar content', 'Baz content']} />
+        <Accordion activeIndex={2} headlines={['Foo', 'Bar', 'Baz']} content={['Foo Content', 'Bar content', 'Baz content']} />
       </div>
     );
   }
